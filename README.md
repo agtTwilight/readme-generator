@@ -24,7 +24,7 @@ asdf
 asdf
         
 ## Contributions
-1. [agtTwilight](https://github.com/agtTwilight) \ 2. [visionmedia](https://github.com/visionmedia)<br>
+1. [agtTwilight](https://github.com/agtTwilight) <br>2. [visionmedia](https://github.com/visionmedia)<br>
         
 ## License
 https://img.shields.io/badge/github/license/:user/:repo
