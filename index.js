@@ -118,7 +118,7 @@ inquirer.prompt([
         if (data.installation != "none") {
                 let arr = data.installation.split(",");
                 for (let i = 0; i < arr.length; i ++) {
-                        installation += `${i+1}. ${arr[i].trim()}<br>`
+                        installation += `<br>${i+1}. ${arr[i].trim()}`
                 }
         } else {
                 installation = "n/a"
@@ -132,6 +132,8 @@ inquirer.prompt([
                         contributions += `<br>${i+1}. [${arr[i].trim()}](https://github.com/${arr[i].trim()})`
                 }
         }
+
+// TODO: 1) update license stuff 2) email 3) make video
 
         const userReadme = readmeTemplate(data.title, data.motivation, data.solution, data.insight, installation, data.usage, contributions, license, data.tests, data.github, data.email)
         fs.writeFile("README.md", userReadme, (err) => 
