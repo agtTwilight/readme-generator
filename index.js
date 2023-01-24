@@ -31,7 +31,7 @@ ${usage}
 ${contributions}
         
 ## License
-https://img.shields.io/badge${license}
+![badge](https://img.shields.io/badge${license})
         
 ## Tests
 ${tests}
