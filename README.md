@@ -22,9 +22,9 @@ I learned how to use inquirer and create documents with user data
 <br>1. node required to run npm install
         
 ## Usage
-after npm install, you can call `node index.js` to start creating a README <br>
+after npm install, you can call `node index.js` to start creating a README <br><br>
 
-[usage video](./assests/readme_generator.mov)
+[Watch the video!](https://drive.google.com/file/d/1mU-QxcWu8b_4hzwq7E9QFA0deWjDn3pZ/view?usp=share_link)
         
 ## Contributions
 1. [agtTwilight](https://github.com/agtTwilight)
