@@ -123,17 +123,15 @@ inquirer.prompt([
         } else {
                 installation = "n/a"
         }
-        console.log(installation)
 
         // Makes a string that holds a list of contributers
         let contributions = '';
         if (data.contributions.indexOf(",") >= 0) {
                 let arr = data.contributions.split(",");
                 for (let i = 0; i < arr.length; i ++) {
-                        contributions += `${i+1}. [${arr[i].trim()}](https://github.com/${arr[i].trim()})<br>`
+                        contributions += `<br>${i+1}. [${arr[i].trim()}](https://github.com/${arr[i].trim()})`
                 }
         }
-        console.log(contributions)
 
         const userReadme = readmeTemplate(data.title, data.motivation, data.solution, data.insight, installation, data.usage, contributions, license, data.tests, data.github, data.email)
         fs.writeFile("README.md", userReadme, (err) => 
