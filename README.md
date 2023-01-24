@@ -27,7 +27,7 @@ asdf
 <br>1. [agtTwilight](https://github.com/agtTwilight)<br>2. [visionmedia](https://github.com/visionmedia)
         
 ## License
-https://img.shields.io/badge//aur/license/:packageName
+![badge](https://img.shields.io/badge//aur/license/)
         
 ## Tests
 undefined
