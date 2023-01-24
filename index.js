@@ -4,6 +4,7 @@ const { AsapScheduler } = require("rxjs/internal/scheduler/AsapScheduler")
 const readmeTemplate = (title, motivation, solution, insight, installation, usage, contributions, license, tests, github, email) => {
         string = `
 # ${title}
+![badge](https://img.shields.io/badge/${license})
 
 ## Description
 **What was your motivation?** <br>
@@ -31,7 +32,7 @@ ${usage}
 ${contributions}
         
 ## License
-![badge](https://img.shields.io/badge/${license})
+// TODO add content about the license used
         
 ## Tests
 ${tests}
@@ -42,7 +43,7 @@ Contact me:
 2. [${email}](mailto:${email})`
         return string
 }
-
+// TODO add a tests sections
 inquirer.prompt([
         {
                 type: 'input',
@@ -125,6 +126,7 @@ inquirer.prompt([
         }
 
         // Makes a string that holds a list of contributers
+        // TODO make it so you can have just one contributor
         let contributions = '';
         if (data.contributions.indexOf(",") >= 0) {
                 let arr = data.contributions.split(",");

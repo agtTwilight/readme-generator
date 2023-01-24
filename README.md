@@ -1,5 +1,6 @@
 
 # README-generator
+![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 **What was your motivation?** <br>
@@ -24,10 +25,9 @@ I learned how to use inquirer and create documents with user data
 after npm install, you can call `node index.js` to start creating a README
         
 ## Contributions
-
+1. [agtTwilight](https://github.com/agtTwilight)
         
 ## License
-![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
         
 ## Tests
 undefined
