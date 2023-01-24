@@ -1,14 +1,13 @@
-
-# asdf
+# ${title}
 
 ## Description
 **What was your motivation?** <br>
-asdf <br><br>
+${motivation} <br><br>
 **What problem does your project solve?** <br>
-asdf <br><br>
+${solution} <br><br>
 **What did you learn from this project?** <br>
-asdf
-        
+${insight}
+
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
@@ -16,23 +15,23 @@ asdf
 - [License](#license)
 - [Tests](#tests)
 - [Questions](#questions)
-        
+
 ## Installation
-1. one<br>2. two<br>
-        
+${installation}
+
 ## Usage
-asdf
-        
+${usage}
+
 ## Contributions
-1. [agtTwilight](https://github.com/agtTwilight)<br>2. [visionmedia](https://github.com/visionmedia)<br>
-        
+${contributions}
+
 ## License
-https://img.shields.io/badge/github/license/:user/:repo
-        
+${license}
+
 ## Tests
-undefined
-        
+${tests}
+
 ## Questions
 Contact me: 
-1. [agtTwilight](https://github.com/agtTwilight)
-2. [asdf]()
+1. [${github}](https://github.com/${github})
+2. [${email}](${})
