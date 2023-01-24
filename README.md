@@ -28,9 +28,10 @@ after npm install, you can call `node index.js` to start creating a README
 1. [agtTwilight](https://github.com/agtTwilight)
         
 ## License
-        
+MIT
+
 ## Tests
-undefined
+n/a
         
 ## Questions
 Contact me: 

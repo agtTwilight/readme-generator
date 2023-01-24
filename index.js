@@ -1,7 +1,7 @@
 const fs = require("fs")
 const inquirer = require("inquirer")
 const { AsapScheduler } = require("rxjs/internal/scheduler/AsapScheduler")
-const readmeTemplate = (title, motivation, solution, insight, installation, usage, contributions, license, tests, github, email) => {
+const readmeTemplate = (title, motivation, solution, insight, installation, usage, contributions, license, licenseName, tests, github, email) => {
         string = `
 # ${title}
 ![badge](https://img.shields.io/badge/${license})
@@ -32,7 +32,7 @@ ${usage}
 ${contributions}
         
 ## License
-// TODO add content about the license used
+${licenseName}
         
 ## Tests
 ${tests}
@@ -83,7 +83,7 @@ inquirer.prompt([
         {
                 type: 'input',
                 name: 'usage',
-                message: 'What does the user need to know about using your repo?'
+                message: 'Any usage notes about your repo?'
         },
         {
                 type: 'input',
@@ -95,6 +95,11 @@ inquirer.prompt([
                 name: 'license',
                 message: 'Which license should your repo use?',
                 choices: ['MIT', 'Apache', 'GPL']
+        },
+        {
+                type: 'input',
+                name: 'tests',
+                message: 'Please note any tests that you have ran:'
         },
 ]) .then((data) => {
 
@@ -135,8 +140,8 @@ inquirer.prompt([
                 }
         }
 
-        const userReadme = readmeTemplate(data.title, data.motivation, data.solution, data.insight, installation, data.usage, contributions, license, data.tests, data.github, data.email)
-        fs.writeFile("README.md", userReadme, (err) => 
+        const userReadme = readmeTemplate(data.title, data.motivation, data.solution, data.insight, installation, data.usage, contributions, license, data.license, data.tests, data.github, data.email)
+        fs.writeFile("demo.md", userReadme, (err) => 
                 err ? console.log(err) : console.log('Success!')
         );
 })
