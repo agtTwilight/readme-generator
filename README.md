@@ -1,13 +1,13 @@
 
-# test
+# README-generator
 
 ## Description
 **What was your motivation?** <br>
-test <br><br>
+I wanted a way to quickly generate professional readme files <br><br>
 **What problem does your project solve?** <br>
-test <br><br>
+This project allows me to create a readme through the terminal <br><br>
 **What did you learn from this project?** <br>
-test
+I learned how to use inquirer and create documents with user data
         
 ## Table of Contents
 - [Installation](#installation)
@@ -18,16 +18,16 @@ test
 - [Questions](#questions)
         
 ## Installation
-1. sahdfh<br>
+<br>1. node required to run npm install
         
 ## Usage
-asdf
+after npm install, you can call `node index.js` to start creating a README
         
 ## Contributions
-<br>1. [agtTwilight](https://github.com/agtTwilight)<br>2. [visionmedia](https://github.com/visionmedia)
+
         
 ## License
-![badge](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+![badge](https://img.shields.io/badge/License-MIT-yellow.svg)
         
 ## Tests
 undefined
@@ -35,4 +35,4 @@ undefined
 ## Questions
 Contact me: 
 1. [agtTwilight](https://github.com/agtTwilight)
-2. [test]()
+2. [lukasmacmillen@gmail.com](mailto:lukasmacmillen@gmail.com)

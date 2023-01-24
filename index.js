@@ -31,7 +31,7 @@ ${usage}
 ${contributions}
         
 ## License
-![badge](https://img.shields.io/badge${license})
+![badge](https://img.shields.io/badge/${license})
         
 ## Tests
 ${tests}
@@ -39,7 +39,7 @@ ${tests}
 ## Questions
 Contact me: 
 1. [${github}](https://github.com/${github})
-2. [${email}]()`
+2. [${email}](mailto:${email})`
         return string
 }
 
@@ -101,15 +101,15 @@ inquirer.prompt([
         let license;
         switch (data.license) {
                 case "MIT":
-                        license = "/github/license/:user/:repo"
+                        license = "License-MIT-yellow.svg"
                         break;
                 
                 case "Apache":
-                        license = "/aur/license/:packageName"
+                        license = "License-Apache_2.0-blue.svg"
                         break;
 
                 case "GPL":
-                        license = "/eclipse-marketplace/l/:name"
+                        license = "License-GPL_v2-blue.svg"
                         break;
         }
 
@@ -132,8 +132,6 @@ inquirer.prompt([
                         contributions += `<br>${i+1}. [${arr[i].trim()}](https://github.com/${arr[i].trim()})`
                 }
         }
-
-// TODO: 1) update license stuff 2) email 3) make video
 
         const userReadme = readmeTemplate(data.title, data.motivation, data.solution, data.insight, installation, data.usage, contributions, license, data.tests, data.github, data.email)
         fs.writeFile("README.md", userReadme, (err) => 
